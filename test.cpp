@@ -7,6 +7,7 @@
 
 #include <iostream>
 #include<string>
+#include<vector>
 
 #include "Dish.cpp"
 
@@ -20,5 +21,7 @@ int main() {
     // creating and testing Dish2 object
     Dish Dish2("Pasta Carbonara",  {"Pasta", "Eggs", "Pancetta", "Parmesan", "Pepper"}, 20, 12.50, Dish::ITALIAN);
     Dish2.display();
+
+    return 0;
     
 }
