@@ -169,7 +169,7 @@ void Dish::display()
 {
     std::cout << "Dish Name: " << name_;
     // iterates through the list of ingredients
-    std::cout << "Dish Name: Ingredients: ";
+    std::cout << "Ingredients: ";
     for (int i = 0; i < ingredients_.size(); i++) {
         std::cout << ingredients_[i];
         if (i != (ingredients_.size()-1) ) {
