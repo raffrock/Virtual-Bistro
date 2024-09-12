@@ -25,8 +25,6 @@ int main() {
     Dish Dish2(dish_name, dish_ing, 20, 12.50, Dish::CuisineType::ITALIAN);
     Dish2.display();
 
-
-    std::cout << "Test";
     return 0;
     
 }
