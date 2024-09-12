@@ -50,7 +50,7 @@ Dish::Dish(std::string& name, std::vector<std::string>& ingredients, int prep_ti
 * @param name A reference to the new name of the dish.
 * @post Sets the private member `name_` to the value of the parameter.
 */
-void Dish::setName(const std::string & new_name_) 
+void Dish::setName(std::string new_name_) 
 {
     name_ = new_name_;
 }
@@ -58,7 +58,7 @@ void Dish::setName(const std::string & new_name_)
 /**
 * @return The name of the dish.
 */
-std::string Dish::getName() const
+std::string Dish::getName() 
 {
     return name_;
 }
@@ -69,7 +69,7 @@ std::string Dish::getName() const
 * @post Sets the private member `ingredients_` to the value of the
 parameter.
 */
-void Dish::setIngredients(const std::vector<std::string> & new_ingredients_)
+void Dish::setIngredients( std::vector<std::string> new_ingredients_)
 {
     ingredients_ = new_ingredients_;
 }
@@ -77,7 +77,7 @@ void Dish::setIngredients(const std::vector<std::string> & new_ingredients_)
 /**
 * @return The list of ingredients used in the dish.
 */
-std::vector<std::string> Dish::getIngredients() const
+std::vector<std::string> Dish::getIngredients() 
 {
     return ingredients_;
 }
@@ -88,7 +88,7 @@ std::vector<std::string> Dish::getIngredients() const
 * @post Sets the private member `prep_time_` to the value of the
 parameter.
 */
-void Dish::setPrepTime(const int & new_prep_time_)
+void Dish::setPrepTime(int new_prep_time_)
 {
     prep_time_ = new_prep_time_;
 }
@@ -96,7 +96,7 @@ void Dish::setPrepTime(const int & new_prep_time_)
 /**
 * @return The preparation time in minutes.
 */
-int Dish::getPrepTime() const
+int Dish::getPrepTime()
 {
     return prep_time_;
 }
@@ -106,7 +106,7 @@ int Dish::getPrepTime() const
 * @param price The new price of the dish.
 * @post Sets the private member `price_` to the value of the parameter.
 */
-void Dish::setPrice(const double & new_price_)
+void Dish::setPrice(double new_price_)
 {
     price_ = new_price_;
 }
@@ -114,7 +114,7 @@ void Dish::setPrice(const double & new_price_)
 /**
 * @return The price of the dish.
 */
-double Dish::getPrice() const
+double Dish::getPrice()
 {
     return price_;
 }
@@ -126,7 +126,7 @@ enum).
 * @post Sets the private member `cuisine_type_` to the value of the
 parameter.
 */
-void Dish::setCuisineType(const CuisineType & new_cuisine_type_)
+void Dish::setCuisineType(CuisineType new_cuisine_type_)
 {
     cuisine_type_ = new_cuisine_type_;
 }
@@ -135,7 +135,7 @@ void Dish::setCuisineType(const CuisineType & new_cuisine_type_)
 * Uses switch case to
 * @return The cuisine type of the dish in string form.
 */
-std::string Dish::getCuisineType() const
+std::string Dish::getCuisineType()
 {
     switch(cuisine_type_) {
         case ITALIAN:

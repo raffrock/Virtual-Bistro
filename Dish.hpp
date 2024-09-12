@@ -54,7 +54,7 @@ public:
     * @param name A reference to the new name of the dish.
     * @post Sets the private member `name_` to the value of the parameter.
     */
-    void setName(const std::string & new_name_);
+    void setName(const std::string& new_name_);
     
     /**
     * @return The name of the dish.
@@ -67,7 +67,7 @@ public:
     * @post Sets the private member `ingredients_` to the value of the
     parameter.
     */
-    void setIngredients(const std::vector<std::string> & new_ingredients_);
+    void setIngredients(const std::vector<std::string>& new_ingredients_);
     
     /**
     * @return The list of ingredients used in the dish.
@@ -80,24 +80,24 @@ public:
     * @post Sets the private member `prep_time_` to the value of the
     parameter.
     */
-    void setPrepTime(const int & new_prep_time_);
+    void setPrepTime(int new_prep_time_);
     
     /**
     * @return The preparation time in minutes.
     */
-    int getPrepTime() const;
+    int getPrepTime();
     
     /**
     * Sets the price of the dish.
     * @param price The new price of the dish.
     * @post Sets the private member `price_` to the value of the parameter.
     */
-    void setPrice(const double & new_price_);
+    void setPrice(double new_price_);
     
     /**
     * @return The price of the dish.
     */
-    double getPrice() const;
+    double getPrice();
     
     /**
     * Sets the cuisine type of the dish.
@@ -106,12 +106,12 @@ public:
     * @post Sets the private member `cuisine_type_` to the value of the
     parameter.
     */
-    void setCuisineType(const CuisineType & new_cuisine_type_);
+    void setCuisineType(CuisineType new_cuisine_type_);
     
     /**
     * @return The cuisine type of the dish in string form.
     */
-    std::string getCuisineType() const;
+    std::string getCuisineType();
     
     /**
     * Displays the details of the dish.
