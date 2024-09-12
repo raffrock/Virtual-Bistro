@@ -5,11 +5,11 @@
 * This the implementation file for the Dish class. It contains constructors (defaults and parameterized), accessors, mutators, and a display function. 
 */
 
+#include "Dish.hpp"
+
 #include <iostream>
 #include <vector>
 #include <string>
-
-#include "Dish.hpp"
 
 /**
 * Default constructor.
