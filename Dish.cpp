@@ -7,13 +7,12 @@
 
 #include "Dish.hpp"
 #include <iostream>
-#include<string>
-#include<vector>
 
 /**
 * Default constructor.
 * Initializes all private members with default values
 */
+
 Dish::Dish()
 {
     name_ = "UNKNOWN";
@@ -34,13 +33,13 @@ with default value OTHER.
 * @post The private members are set to the values of the corresponding
 parameters.
 */
-Dish::Dish(std::string name_, std::vector<std::string> ingredients_, int prep_time_, double price_, CuisineType cuisine_type_)
+Dish::Dish(std::string name, std::vector<std::string> ingredients, int prep_time, double price, CuisineType cuisine_type)
 {
-    this->name_ = name_;
-    this->ingredients_ = ingredients_;
-    this->prep_time_ = prep_time_;
-    this->price_ = price_;
-    this->cuisine_type_ = cuisine_type_;
+    name = name_;
+    ingredients = ingredients_;
+    prep_time_ = prep_time;
+    price_ = price;
+    cuisine_type_ = cuisine_type;
 }
 
 /**
@@ -48,7 +47,7 @@ Dish::Dish(std::string name_, std::vector<std::string> ingredients_, int prep_ti
 * @param name A reference to the new name of the dish.
 * @post Sets the private member `name_` to the value of the parameter.
 */
-void Dish::setName(std::string new_name_) 
+void Dish::setName(const std::string & new_name_) 
 {
     name_ = new_name_;
 }
@@ -56,7 +55,7 @@ void Dish::setName(std::string new_name_)
 /**
 * @return The name of the dish.
 */
-std::string Dish::getName() 
+std::string Dish::getName() const
 {
     return name_;
 }
@@ -67,7 +66,7 @@ std::string Dish::getName()
 * @post Sets the private member `ingredients_` to the value of the
 parameter.
 */
-void Dish::setIngredients(std::vector<std::string> new_ingredients_)
+void Dish::setIngredients(const std::vector<std::string> & new_ingredients_)
 {
     ingredients_ = new_ingredients_;
 }
@@ -75,7 +74,7 @@ void Dish::setIngredients(std::vector<std::string> new_ingredients_)
 /**
 * @return The list of ingredients used in the dish.
 */
-std::vector<std::string> Dish::getIngredients()
+std::vector<std::string> Dish::getIngredients() const
 {
     return ingredients_;
 }
@@ -86,7 +85,7 @@ std::vector<std::string> Dish::getIngredients()
 * @post Sets the private member `prep_time_` to the value of the
 parameter.
 */
-void Dish::setPrepTime(int new_prep_time_)
+void Dish::setPrepTime(const int & new_prep_time_)
 {
     prep_time_ = new_prep_time_;
 }
@@ -94,7 +93,7 @@ void Dish::setPrepTime(int new_prep_time_)
 /**
 * @return The preparation time in minutes.
 */
-int Dish::getPrepTime()
+int Dish::getPrepTime() const
 {
     return prep_time_;
 }
@@ -104,7 +103,7 @@ int Dish::getPrepTime()
 * @param price The new price of the dish.
 * @post Sets the private member `price_` to the value of the parameter.
 */
-void Dish::setPrice(double new_price_)
+void Dish::setPrice(const double & new_price_)
 {
     price_ = new_price_;
 }
@@ -112,7 +111,7 @@ void Dish::setPrice(double new_price_)
 /**
 * @return The price of the dish.
 */
-double Dish::getPrice()
+double Dish::getPrice() const
 {
     return price_;
 }

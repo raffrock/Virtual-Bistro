@@ -2,7 +2,7 @@ CXX = g++
 CXXFLAGS = -std=c++17 -g -Wall -O2
 
 PROG ?= main
-OBJS = Dish.o ChangeThis.o
+OBJS = Dish.o test.o
 
 all: $(PROG)
 
@@ -16,3 +16,4 @@ clean:
 	rm -rf $(EXEC) *.o *.out main 
 
 rebuild: clean all
+

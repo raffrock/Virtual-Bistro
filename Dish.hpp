@@ -9,7 +9,6 @@
 #define DISH_HPP
 
 #include<iostream>
-#include<string>
 #include<vector>
 
 class Dish 
@@ -47,19 +46,19 @@ public:
     * @post The private members are set to the values of the corresponding
     parameters.
     */
-    Dish(std::string name_, std::vector<std::string> ingredients_, int prep_time_, double price_, CuisineType cuisine_type_);
+    Dish(std::string name, std::vector<std::string> ingredients, int prep_time, double price, CuisineType cuisine_type);
     
     /**
     * Sets the name of the dish.
     * @param name A reference to the new name of the dish.
     * @post Sets the private member `name_` to the value of the parameter.
     */
-    void setName(std::string new_name_);
+    void setName(const std::string & new_name_);
     
     /**
     * @return The name of the dish.
     */
-    std::string getName();
+    std::string getName() const;
     
     /**
     * Sets the list of ingredients.
@@ -67,12 +66,12 @@ public:
     * @post Sets the private member `ingredients_` to the value of the
     parameter.
     */
-    void setIngredients(std::vector<std::string> new_ingredients_);
+    void setIngredients(const std::vector<std::string> & new_ingredients_);
     
     /**
     * @return The list of ingredients used in the dish.
     */
-    std::vector<std::string> getIngredients();
+    std::vector<std::string> getIngredients() const;
     
     /**
     * Sets the preparation time.
@@ -80,24 +79,24 @@ public:
     * @post Sets the private member `prep_time_` to the value of the
     parameter.
     */
-    void setPrepTime(int new_prep_time_);
+    void setPrepTime(const int & new_prep_time_);
     
     /**
     * @return The preparation time in minutes.
     */
-    int getPrepTime();
+    int getPrepTime() const;
     
     /**
     * Sets the price of the dish.
     * @param price The new price of the dish.
     * @post Sets the private member `price_` to the value of the parameter.
     */
-    void setPrice(double new_price_);
+    void setPrice(const double & new_price_);
     
     /**
     * @return The price of the dish.
     */
-    double getPrice();
+    double getPrice() const;
     
     /**
     * Sets the cuisine type of the dish.
