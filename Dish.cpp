@@ -166,16 +166,17 @@ preparation time, price, and cuisine type, to the standard output.
 */
 void Dish::display()
 {
-    std::cout << "Dish Name: " << name_;
+    std::cout << "Dish Name: " << name_ << endl;
     // iterates through the list of ingredients
-    std::cout << "Dish Name: Ingredients: ";
+    std::cout << "Ingredients: ";
     for (int i = 0; i < ingredients_.size(); i++) {
         std::cout << ingredients_[i];
         if (i != (ingredients_.size()-1) ) {
-            std::cout << ", ";
+            std::court << ", ";
         }
     }
-    std::cout << "Preparation Time: " << prep_time_;
-    std::cout << "Price: " << price_;
-    std::cout << "Cuisine Type: " << cuisine_type_;
+    std::cout << endl;
+    std::cout << "Preparation Time: " << prep_time_ << endl;
+    std::cout << "Price: " << price_ << endl;
+    std::cout << "Cuisine Type: " << cuisine_type_ << endl;
 }
