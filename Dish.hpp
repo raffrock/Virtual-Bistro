@@ -8,8 +8,9 @@
 #ifndef DISH_HPP
 #define DISH_HPP
 
-#include<iostream>
-#include<vector>
+#include <iostream>
+#include <vector>
+#include <string>
 
 class Dish 
 {
@@ -31,6 +32,7 @@ private:
     * - price: 0.0
     * - cuisine_type: OTHER
     */
+public:
     Dish();
     
     /**
@@ -45,7 +47,7 @@ private:
     * @post The private members are set to the values of the corresponding
     parameters.
     */
-    Dish(std::string name, std::vector<std::string> ingredients, int prep_time, double price, CuisineType cuisine_type);
+    Dish(std::string& name, std::vector<std::string>& ingredients, int prep_time, double price, CuisineType cuisine_type);
     
     /**
     * Sets the name of the dish.
@@ -104,12 +106,12 @@ private:
     * @post Sets the private member `cuisine_type_` to the value of the
     parameter.
     */
-    void setCuisineType(CuisineType new_cuisine_type_);
+    void setCuisineType(const CuisineType & new_cuisine_type_);
     
     /**
     * @return The cuisine type of the dish in string form.
     */
-    std::string getCuisineType();
+    std::string getCuisineType() const;
     
     /**
     * Displays the details of the dish.

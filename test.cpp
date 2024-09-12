@@ -5,11 +5,11 @@
 * This tests the Dish class and files by creating two dish objects, changing variables with setter functions, and prints both dishes with the display function.
 */
 
-#include <iostream>
-#include<string>
-#include<vector>
+#include "Dish.hpp"
 
-#include "Dish.cpp"
+#include <iostream>
+#include <string>
+#include <vector>
 
 int main() {
 
@@ -25,6 +25,8 @@ int main() {
     Dish Dish2(dish_name, dish_ing, 20, 12.50, Dish::CuisineType::ITALIAN);
     Dish2.display();
 
+
+    std::cout << "Test";
     return 0;
     
 }

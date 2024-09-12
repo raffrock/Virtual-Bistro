@@ -5,8 +5,11 @@
 * This the implementation file for the Dish class. It contains constructors (defaults and parameterized), accessors, mutators, and a display function. 
 */
 
-#include "Dish.hpp"
 #include <iostream>
+#include <vector>
+#include <string>
+
+#include "Dish.hpp"
 
 /**
 * Default constructor.
@@ -33,7 +36,7 @@ with default value OTHER.
 * @post The private members are set to the values of the corresponding
 parameters.
 */
-Dish::Dish(std::string name, std::vector<std::string> ingredients, int prep_time, double price, CuisineType cuisine_type)
+Dish::Dish(std::string& name, std::vector<std::string>& ingredients, int prep_time, double price, CuisineType cuisine_type)
 {
     name = name_;
     ingredients = ingredients_;
@@ -123,7 +126,7 @@ enum).
 * @post Sets the private member `cuisine_type_` to the value of the
 parameter.
 */
-void Dish::setCuisineType(CuisineType new_cuisine_type_)
+void Dish::setCuisineType(const CuisineType & new_cuisine_type_)
 {
     cuisine_type_ = new_cuisine_type_;
 }
@@ -132,7 +135,7 @@ void Dish::setCuisineType(CuisineType new_cuisine_type_)
 * Uses switch case to
 * @return The cuisine type of the dish in string form.
 */
-std::string Dish::getCuisineType()
+std::string Dish::getCuisineType() const
 {
     switch(cuisine_type_) {
         case ITALIAN:
@@ -166,17 +169,17 @@ preparation time, price, and cuisine type, to the standard output.
 */
 void Dish::display()
 {
-    std::cout << "Dish Name: " << name_ << endl;
+    std::cout << "Dish Name: " << name_ << std::endl;
     // iterates through the list of ingredients
     std::cout << "Ingredients: ";
     for (int i = 0; i < ingredients_.size(); i++) {
         std::cout << ingredients_[i];
         if (i != (ingredients_.size()-1) ) {
-            std::court << ", ";
+            std::cout << ", ";
         }
     }
-    std::cout << endl;
-    std::cout << "Preparation Time: " << prep_time_ << endl;
-    std::cout << "Price: " << price_ << endl;
-    std::cout << "Cuisine Type: " << cuisine_type_ << endl;
+    std::cout << std::endl;
+    std::cout << "Preparation Time: " << prep_time_ << std::endl;
+    std::cout << "Price: " << price_ << std::endl;
+    std::cout << "Cuisine Type: " << cuisine_type_ << std::endl;
 }
