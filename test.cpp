@@ -9,12 +9,10 @@
 #include<string>
 #include<vector>
 
-#include "Dish.hpp"
+#include "Dish.cpp"
 
 int main() {
-    // adding enum to file to allow to be in the para of the para'ized constructor
-    enum CuisineType { ITALIAN, MEXICAN, CHINESE, INDIAN,
-AMERICAN, FRENCH, OTHER };
+
     
     // creating and testing Dish1 object
     Dish Dish1; // note to see: when using default constructor no ()
