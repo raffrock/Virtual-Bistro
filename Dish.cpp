@@ -38,8 +38,8 @@ parameters.
 */
 Dish::Dish(std::string& name, std::vector<std::string>& ingredients, int prep_time, double price, CuisineType cuisine_type)
 {
-    name = name_;
-    ingredients = ingredients_;
+    name_ = name;
+    ingredients_ = ingredients;
     prep_time_ = prep_time;
     price_ = price;
     cuisine_type_ = cuisine_type;
@@ -181,5 +181,5 @@ void Dish::display()
     std::cout << std::endl;
     std::cout << "Preparation Time: " << prep_time_ << std::endl;
     std::cout << "Price: " << price_ << std::endl;
-    std::cout << "Cuisine Type: " << cuisine_type_ << std::endl;
+    std::cout << "Cuisine Type: " << getCuisineType() << std::endl;
 }
