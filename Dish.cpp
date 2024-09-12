@@ -36,7 +36,7 @@ with default value OTHER.
 * @post The private members are set to the values of the corresponding
 parameters.
 */
-Dish::Dish(std::string& name, std::vector<std::string>& ingredients, int prep_time, double price, CuisineType cuisine_type)
+Dish::Dish(std::string name, std::vector<std::string> ingredients, int prep_time, double price, CuisineType cuisine_type)
 {
     name_ = name;
     ingredients_ = ingredients;

@@ -47,7 +47,7 @@ public:
     * @post The private members are set to the values of the corresponding
     parameters.
     */
-    Dish(std::string& name, std::vector<std::string>& ingredients, int prep_time, double price, CuisineType cuisine_type);
+    Dish(std::string name, std::vector<std::string> ingredients, int prep_time, double price, CuisineType cuisine_type);
     
     /**
     * Sets the name of the dish.
