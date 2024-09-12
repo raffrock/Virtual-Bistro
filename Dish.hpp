@@ -47,19 +47,19 @@ public:
     * @post The private members are set to the values of the corresponding
     parameters.
     */
-    Dish(std::string& name, std::vector<std::string>& ingredients, int prep_time, double price, CuisineType cuisine_type);
+    Dish(std::string name, std::vector<std::string> ingredients, int prep_time, double price, CuisineType cuisine_type);
     
     /**
     * Sets the name of the dish.
     * @param name A reference to the new name of the dish.
     * @post Sets the private member `name_` to the value of the parameter.
     */
-    void setName(const std::string& new_name_);
+    void setName(std::string new_name_);
     
     /**
     * @return The name of the dish.
     */
-    std::string getName() const;
+    std::string getName();
     
     /**
     * Sets the list of ingredients.
@@ -67,12 +67,12 @@ public:
     * @post Sets the private member `ingredients_` to the value of the
     parameter.
     */
-    void setIngredients(const std::vector<std::string>& new_ingredients_);
+    void setIngredients(std::vector<std::string> new_ingredients_);
     
     /**
     * @return The list of ingredients used in the dish.
     */
-    std::vector<std::string> getIngredients() const;
+    std::vector<std::string> getIngredients();
     
     /**
     * Sets the preparation time.
