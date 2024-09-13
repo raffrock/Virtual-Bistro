@@ -21,8 +21,9 @@ int main() {
     Dish1.display();
 
     // testing set function that aren't tested above
-    Dish1.setName("New Name");
-    Dish1.setCuisineType(Dish::CuisineType::ITALIAN);
+    Dish1.setName("BaconEggCheese");
+    Dish1.setCuisineType(Dish::CuisineType::AMERICAN);
+    Dish1.setIngredients({"Egg", "Bacon", "Cheese"});
 
     // testing get functions
     std::cout << Dish1.getName() << std::endl;
