@@ -10,6 +10,7 @@
 #include <iostream>
 #include <vector>
 #include <string>
+#include <iomanip>
 
 /**
 * Default constructor.
@@ -179,7 +180,11 @@ void Dish::display()
         }
     }
     std::cout << std::endl;
-    std::cout << "Preparation Time: " << prep_time_ << std::endl;
-    std::cout << "Price: " << price_ << std::endl;
+    std::cout << "Preparation Time: " << prep_time_ << " minutes" << std::endl;
+    // converting price double to a _.__ format
+    std::string price_str = std::to_string(price_);
+    int positonOfDecimal = price_str.find(".");
+    price_str = price_str.substr(0,positonOfDecimal+3);
+    std::cout << "Price: $" << price_str << std::endl;
     std::cout << "Cuisine Type: " << getCuisineType() << std::endl;
 }

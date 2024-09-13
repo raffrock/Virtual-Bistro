@@ -20,19 +20,17 @@ int main() {
     Dish1.setPrice(9.99);
     Dish1.display();
 
-    Dish BaconEggCheese;
-
     // testing set function that aren't tested above
-    BaconEggCheese.setName("BaconEggAndCheese");
-    BaconEggCheese.setCuisineType(Dish::CuisineType::AMERICAN);
-    BaconEggCheese.setIngredients({"Egg", "Bacon", "Cheese"});
+    Dish1.setName("BaconEggAndCheese");
+    Dish1.setCuisineType(Dish::CuisineType::AMERICAN);
+    Dish1.setIngredients({"Egg", "Bacon", "Cheese"});
 
     // testing get functions
-    std::cout << BaconEggCheese.getName() << std::endl;
-    std::vector<std::string> BaconEggCheeseIng = BaconEggCheese.getIngredients();
-    std::cout << BaconEggCheese.getPrepTime() << std::endl;
-    std::cout << BaconEggCheese.getPrice() << std::endl;
-    std::cout << BaconEggCheese.getCuisineType() << std::endl;
+    std::cout << Dish1.getName() << std::endl;
+    std::vector<std::string> dish1Ing = Dish1.getIngredients();
+    std::cout << Dish1.getPrepTime() << std::endl;
+    std::cout << Dish1.getPrice() << std::endl;
+    std::cout << Dish1.getCuisineType() << std::endl;
     
     // if i don't do this, i get it an error because name is a const char[] and not a std::string.......
     Dish Dish2("Pasta Carbonara", {"Pasta", "Eggs", "Pancetta", "Parmesan", "Pepper"}, 20, 12.50, Dish::CuisineType::ITALIAN);
