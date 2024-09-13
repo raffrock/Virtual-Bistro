@@ -20,6 +20,7 @@
 Dish::Dish()
 {
     name_ = "UNKNOWN";
+    ingredients_ = {};
     prep_time_ = 0;
     price_ = 0.0;
     cuisine_type_ = OTHER;

@@ -15,14 +15,15 @@
 class Dish 
 {
 public:
-    enum CuisineType { ITALIAN, MEXICAN, CHINESE, INDIAN,
-AMERICAN, FRENCH, OTHER };
+    // public so it is accessiable to the main function for the construction of Dish object
+    enum CuisineType { ITALIAN, MEXICAN, CHINESE, INDIAN, AMERICAN, FRENCH, OTHER };
 private:
     std::string name_;
     std::vector<std::string> ingredients_;
     int prep_time_;
     double price_;
     CuisineType cuisine_type_;
+public:
     /**
     * Default constructor.
     * Initializes all private members with default values:
@@ -32,7 +33,6 @@ private:
     * - price: 0.0
     * - cuisine_type: OTHER
     */
-public:
     Dish();
     
     /**
