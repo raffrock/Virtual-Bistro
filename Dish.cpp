@@ -39,8 +39,8 @@ parameters.
 */
 Dish::Dish(const std::string& name, const std::vector<std::string>& ingredients, int prep_time, double price, CuisineType cuisine_type)
 {
-    Dish::setName(name);
-    Dish::setIngredients(ingredients);
+    name_ = name;
+    ingredients_ = ingredients;
     prep_time_ = prep_time;
     price_ = price;
     cuisine_type_ = cuisine_type;
