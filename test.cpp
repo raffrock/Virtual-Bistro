@@ -20,6 +20,10 @@ int main() {
     Dish1.setPrice(9.99);
     Dish1.display();
 
+    // testing set function that aren't tested above
+    Dish1.setName("New Name");
+    Dish1.setCuisineType(Dish::CuisineType::ITALIAN);
+
     // testing get functions
     std::cout << Dish1.getName() << std::endl;
     std::vector<std::string> dish1Ing = Dish1.getIngredients();
@@ -28,9 +32,7 @@ int main() {
     std::cout << Dish1.getCuisineType() << std::endl;
     
     // if i don't do this, i get it an error because name is a const char[] and not a std::string.......
-    std::string dish_name = "Pasta Carbonara";
-    std::vector<std::string> dish_ing = {"Pasta", "Eggs", "Pancetta", "Parmesan", "Pepper"};
-    Dish Dish2(dish_name, dish_ing, 20, 12.50, Dish::CuisineType::ITALIAN);
+    Dish Dish2("Pasta Carbonara", {"Pasta", "Eggs", "Pancetta", "Parmesan", "Pepper"}, 20, 12.50, Dish::CuisineType::ITALIAN);
     Dish2.display();
 
     return 0;
