@@ -20,8 +20,12 @@ int main() {
     Dish1.setPrice(9.99);
     Dish1.display();
 
-    // gradescrope says to check .getName() and I say ok
-    std::string dish1Name = Dish1.getName();
+    // testing get functions
+    std::cout << Dish1.getName();
+    std::vector<std::string> dish1Ing = Dish1.getIngredients();
+    std::cout << Dish1.getPrepTime();
+    std::cout << Dish1.getPrice();
+    std::cout << Dish1.getCuisineType();
     
     // if i don't do this, i get it an error because name is a const char[] and not a std::string.......
     std::string dish_name = "Pasta Carbonara";
