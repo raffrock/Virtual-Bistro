@@ -89,7 +89,7 @@ std::vector<std::string> Dish::getIngredients() const
 * @post Sets the private member `prep_time_` to the value of the
 parameter.
 */
-void Dish::setPrepTime(int new_prep_time_)
+void Dish::setPrepTime(const int& new_prep_time_)
 {
     prep_time_ = new_prep_time_;
 }
@@ -97,7 +97,7 @@ void Dish::setPrepTime(int new_prep_time_)
 /**
 * @return The preparation time in minutes.
 */
-int Dish::getPrepTime()
+int Dish::getPrepTime() const
 {
     return prep_time_;
 }
@@ -107,7 +107,7 @@ int Dish::getPrepTime()
 * @param price The new price of the dish.
 * @post Sets the private member `price_` to the value of the parameter.
 */
-void Dish::setPrice(double new_price_)
+void Dish::setPrice(const double& new_price_) 
 {
     price_ = new_price_;
 }
@@ -115,7 +115,7 @@ void Dish::setPrice(double new_price_)
 /**
 * @return The price of the dish.
 */
-double Dish::getPrice()
+double Dish::getPrice() const
 {
     return price_;
 }
@@ -127,7 +127,7 @@ enum).
 * @post Sets the private member `cuisine_type_` to the value of the
 parameter.
 */
-void Dish::setCuisineType(CuisineType new_cuisine_type_)
+void Dish::setCuisineType(const CuisineType& new_cuisine_type_)
 {
     cuisine_type_ = new_cuisine_type_;
 }

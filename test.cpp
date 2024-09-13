@@ -24,7 +24,7 @@ int main() {
     Dish1.setName("BaconEggAndCheese");
     Dish1.setCuisineType(Dish::CuisineType::AMERICAN);
     Dish1.setIngredients({"Egg", "Bacon", "Cheese"});
-
+    
     // testing get functions
     std::cout << Dish1.getName() << std::endl;
     std::vector<std::string> dish1Ing = Dish1.getIngredients();

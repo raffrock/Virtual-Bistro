@@ -82,24 +82,24 @@ public:
     * @post Sets the private member `prep_time_` to the value of the
     parameter.
     */
-    void setPrepTime(int new_prep_time_);
+    void setPrepTime(const int& new_prep_time_);
     
     /**
     * @return The preparation time in minutes.
     */
-    int getPrepTime();
+    int getPrepTime() const;
     
     /**
     * Sets the price of the dish.
     * @param price The new price of the dish.
     * @post Sets the private member `price_` to the value of the parameter.
     */
-    void setPrice(double new_price_);
+    void setPrice(const double& new_price_);
     
     /**
     * @return The price of the dish.
     */
-    double getPrice();
+    double getPrice() const;
     
     /**
     * Sets the cuisine type of the dish.
@@ -108,7 +108,7 @@ public:
     * @post Sets the private member `cuisine_type_` to the value of the
     parameter.
     */
-    void setCuisineType(CuisineType new_cuisine_type_);
+    void setCuisineType(const CuisineType& new_cuisine_type_);
     
     /**
     * @return The cuisine type of the dish in string form.
