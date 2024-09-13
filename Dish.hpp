@@ -113,7 +113,7 @@ public:
     /**
     * @return The cuisine type of the dish in string form.
     */
-    std::string getCuisineType();
+    std::string getCuisineType() const;
     
     /**
     * Displays the details of the dish.

@@ -136,7 +136,7 @@ void Dish::setCuisineType(const CuisineType& new_cuisine_type_)
 * Uses switch case to
 * @return The cuisine type of the dish in string form.
 */
-std::string Dish::getCuisineType()
+std::string Dish::getCuisineType() const
 {
     switch(cuisine_type_) {
         case ITALIAN:
