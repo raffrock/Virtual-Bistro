@@ -48,18 +48,20 @@ public:
     parameters.
     */
     Dish(std::string name, std::vector<std::string> ingredients, int prep_time, double price, CuisineType cuisine_type);
-    
+    // when I tried to pass as referencing using &, the code didn't compile... what is the solution!
+
+
     /**
     * Sets the name of the dish.
     * @param name A reference to the new name of the dish.
     * @post Sets the private member `name_` to the value of the parameter.
     */
-    void setName(std::string new_name_);
+    void setName(const std::string& new_name_);
     
     /**
     * @return The name of the dish.
     */
-    std::string getName();
+    std::string getName() const;
     
     /**
     * Sets the list of ingredients.
@@ -67,12 +69,12 @@ public:
     * @post Sets the private member `ingredients_` to the value of the
     parameter.
     */
-    void setIngredients(std::vector<std::string> new_ingredients_);
+    void setIngredients(const std::vector<std::string>& new_ingredients_);
     
     /**
     * @return The list of ingredients used in the dish.
     */
-    std::vector<std::string> getIngredients();
+    std::vector<std::string> getIngredients() const;
     
     /**
     * Sets the preparation time.

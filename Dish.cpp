@@ -50,7 +50,7 @@ Dish::Dish(std::string name, std::vector<std::string> ingredients, int prep_time
 * @param name A reference to the new name of the dish.
 * @post Sets the private member `name_` to the value of the parameter.
 */
-void Dish::setName(std::string new_name_) 
+void Dish::setName(const std::string& new_name_) 
 {
     name_ = new_name_;
 }
@@ -58,7 +58,7 @@ void Dish::setName(std::string new_name_)
 /**
 * @return The name of the dish.
 */
-std::string Dish::getName() 
+std::string Dish::getName() const
 {
     return name_;
 }
@@ -69,7 +69,7 @@ std::string Dish::getName()
 * @post Sets the private member `ingredients_` to the value of the
 parameter.
 */
-void Dish::setIngredients( std::vector<std::string> new_ingredients_)
+void Dish::setIngredients(const std::vector<std::string>& new_ingredients_)
 {
     ingredients_ = new_ingredients_;
 }
@@ -77,7 +77,7 @@ void Dish::setIngredients( std::vector<std::string> new_ingredients_)
 /**
 * @return The list of ingredients used in the dish.
 */
-std::vector<std::string> Dish::getIngredients() 
+std::vector<std::string> Dish::getIngredients() const
 {
     return ingredients_;
 }
