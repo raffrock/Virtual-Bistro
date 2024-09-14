@@ -127,7 +127,7 @@ public:
     * Price: $[Price, formatted to two decimal places]
     * Cuisine Type: [Cuisine type]
     */
-    void display();        
+    void display() const;        
 };
 
 #endif

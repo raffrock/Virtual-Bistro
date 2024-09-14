@@ -169,7 +169,7 @@ preparation time, price, and cuisine type, to the standard output.
 * Price: $[Price, formatted to two decimal places]
 * Cuisine Type: [Cuisine type]
 */
-void Dish::display()
+void Dish::display() const
 {
     std::cout << "Dish Name: " << name_ << std::endl;
     // iterates through the list of ingredients
