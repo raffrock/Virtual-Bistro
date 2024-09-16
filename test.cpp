@@ -26,11 +26,12 @@ int main() {
     Dish1.setIngredients({"Egg", "Bacon", "Cheese"});
     
     // testing get functions
-    std::cout << Dish1.getName() << std::endl;
+    // dont cout, doesn't match instruction 
+    Dish1.getName();
     std::vector<std::string> dish1Ing = Dish1.getIngredients();
-    std::cout << Dish1.getPrepTime() << std::endl;
-    std::cout << Dish1.getPrice() << std::endl;
-    std::cout << Dish1.getCuisineType() << std::endl;
+    Dish1.getPrepTime();
+    Dish1.getPrice();
+    Dish1.getCuisineType();
     
     // if i don't do this, i get it an error because name is a const char[] and not a std::string.......
     Dish Dish2("Pasta Carbonara", {"Pasta", "Eggs", "Pancetta", "Parmesan", "Pepper"}, 20, 12.50, Dish::CuisineType::ITALIAN);
