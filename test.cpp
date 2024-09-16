@@ -36,7 +36,7 @@ int main() {
     Dish Dish2("Pasta Carbonara", {"Pasta", "Eggs", "Pancetta", "Parmesan", "Pepper"}, 20, 12.50, Dish::ITALIAN);
     Dish2.display();
 
-    // testing default constructor with one arguement
+    // testing constructor with default 
     // Dish Dish3("Food");
     // Dish3.display();
 
