@@ -47,7 +47,7 @@ public:
     * @post The private members are set to the values of the corresponding
     parameters.
     */
-    Dish(const std::string& name, const std::vector<std::string>& ingredients, const int& prep_time, const double& price, const CuisineType& cuisine_type);
+    Dish(const std::string& name, const std::vector<std::string>& ingredients = {}, const int& prep_time = 0, const double& price = 0.0, const CuisineType& cuisine_type = OTHER);
     // when I tried to pass as referencing using &, the code didn't compile... what is the solution!
 
 
