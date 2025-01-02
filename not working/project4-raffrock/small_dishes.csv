@@ -1,0 +1,7 @@
+DishType,Name,Ingredients,PreparationTime,Price,CuisineType,AdditionalAttributes
+APPETIZER,Samosas,Potatoes;Peas;Spices;Flour,30,5.49,INDIAN,PLATED;5;true
+APPETIZER,Buffalo Wings,Chicken;Hot Sauce;Butter;Celery,25,8.99,AMERICAN,FAMILY_STYLE;7;false
+MAINCOURSE,Stuffed Peppers,Bell Peppers;Rice;Ground Beef;Tomato Sauce,45,12.99,MEDITERRANEAN,BAKED;Beef;Side Salad:SALAD|Garlic Bread:BREAD;false
+MAINCOURSE,Enchiladas,Tortillas;Chicken;Cheese;Enchilada Sauce,40,12.49,MEXICAN,BAKED;Chicken;Refried Beans:LEGUME|Mexican Rice:GRAIN;false
+DESSERT,Bread Pudding,Bread;Milk;Eggs;Sugar,45,4.99,BRITISH,SWEET;6;false
+DESSERT,Affogato,Vanilla Ice Cream;Espresso,5,3.99,ITALIAN,BITTER;2;false

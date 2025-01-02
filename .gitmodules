@@ -1,0 +1,3 @@
+[submodule "project3/project3-raffrock"]
+	path = project3/project3-raffrock
+	url = git@github.com:Hunter-CSCI-235-Fall2024/project3-raffrock.git
