@@ -1,1 +1,1 @@
-This is the collection of projects from my Software Anaylsis & Design class. Over the course of a semster, we created different ways to organize a kitchen and dishes 
+This is a collection of projects from my Software Analysis & Design class. Over a semester, we created different ways to organize a kitchen and dishes using multiple data types: stacks, queues, pairs, vectors, etc. 
